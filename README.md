@@ -64,6 +64,36 @@ The Traffic Monitoring System leverages video and image processing techniques fo
 - **Arduino IDE** for uploading code to the Arduino.
 - **[OV7670 Library](https://github.com/indrekluuk/LiveOV7670)** for the Arduino camera module.
 - **LiquidCrystal_I2C** for the LCD module.
+  ## OV7670 to Arduino Wiring
+
+Below is the pin configuration for connecting the OV7670 camera module to an Arduino Uno or Nano:
+
+### OV7670 to Arduino Connections:
+
+| **OV7670 Pin** | **Arduino Pin**  | **Description**                                   |
+|----------------|------------------|---------------------------------------------------|
+| **VSYNC**      | **PIN 2**         | Vertical Sync Signal                              |
+| **XCLCK**      | **PIN 3**         | External Clock (Must be level shifted to 3.3V)    |
+| **PCLCK**      | **PIN 12**        | Pixel Clock Signal                                |
+| **SIOD**       | **A4**            | I2C Data Line (Requires 10K pull-up to 3.3V)      |
+| **SIOC**       | **A5**            | I2C Clock Line (Requires 10K pull-up to 3.3V)     |
+| **D0**         | **A0**            | Pixel Data Bit 0                                  |
+| **D1**         | **A1**            | Pixel Data Bit 1                                  |
+| **D2**         | **A2**            | Pixel Data Bit 2                                  |
+| **D3**         | **A3**            | Pixel Data Bit 3                                  |
+| **D4**         | **PIN 4**         | Pixel Data Bit 4                                  |
+| **D5**         | **PIN 5**         | Pixel Data Bit 5                                  |
+| **D6**         | **PIN 6**         | Pixel Data Bit 6                                  |
+| **D7**         | **PIN 7**         | Pixel Data Bit 7                                  |
+| **3.3V**       | **3.3V**          | Power Supply to OV7670                            |
+| **RESET**      | **3.3V**          | Reset Pin                                         |
+| **PWDN**       | **GND**           | Power Down                                        |
+| **GND**        | **GND**           | Ground                                            |
+
+**Note:**
+- The **XCLCK** pin needs a level shifter as it works at 3.3V while Arduino operates at 5V.
+- Both **SIOD** and **SIOC** require **10K pull-up resistors** to 3.3V for I2C communication.
+
 
 ---
 
