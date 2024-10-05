@@ -99,10 +99,11 @@ Below is the pin configuration for connecting the OV7670 camera module to an Ard
 
 ## Installation
 
-### Step 1: Clone the Repository
 
-Start by cloning this repository to your local machine:
+### 1. Clone the Repository
+
+First, clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/Traffic-Monitoring-System.git
-cd Traffic-Monitoring-System
+git clone https://github.com/ARUNKUMAR0984/GEN_AI_HACKATHON.git
+cd GEN_AI_HACKATHON
