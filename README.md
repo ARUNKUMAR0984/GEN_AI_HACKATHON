@@ -21,6 +21,12 @@ This project implements a system that performs traffic video processing and real
 
 ---
 
+## Reference Video:
+
+
+[![Watch the video](http://img.youtube.com/vi/pMCuFGMMPS0/0.jpg)](http://www.youtube.com/watch?v=pMCuFGMMPS0)
+
+
 ## Project Overview
 
 The Traffic Monitoring System leverages video and image processing techniques for object detection and counting in traffic videos. It supports both **single video** and **multiple video** processing and captures real-time images using the **Arduino OV7670 camera module**. This system can also process images stored in a local directory one by one. The key use cases include:
